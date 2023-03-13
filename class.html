@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element by class name</title>
+    <script type="text/javascript">
+        function elementb1(){
+            let b1=document.getElementsByClassName("student");
+            for(let i=0;i<b1.length;i++){
+                b1[i].style.color="red";
+            }
+        }
+        </script>
+</head>
+
+<body>
+    <p class="student">My name is jayanth</p>
+    <p class="student">I am a Enginnering student</p>
+    <p class="student">My native place is kadapa</p>
+    <br>
+    <button onclick="elementb1()">
+        clickme
+    </button>
+</body>
+
+</html>

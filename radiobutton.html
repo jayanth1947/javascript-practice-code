@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio button</title>
+    <script type="text/javascript">
+        function fn1(){
+        var rd1 = documet.getElementById("rd1");
+        var rd2 = document.getElementById("rd2");
+        if(rd1.checked==true)
+        alert("I am learning"+rd1.value);
+        else if(rd2.checked==true)
+        alert("I am learning"+rd2.value);
+        else
+        alert("Not studying");
+    }
+    </script>
+</head>
+<body>
+    <input id="rd1" name="g1" type="radio" value="python">python</input>
+    <br>
+    <input id="rd2" name="g1" type="radio" value="javascript">javascript</input>
+    <br>
+    <button onclick="fn1()">Click me</button>
+    <button onclick="fn1()">Click me</button>
+</body>
+</html>

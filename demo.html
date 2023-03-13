@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo html page with dom</title>
+    <script type="text/javascript">
+        /*DOM manipulations*/
+        function button(){
+            //alert("click on the button"); //innerHtML is used for re-writing the data in it
+            //document.getElementById("heading").innerHTML="jayanth is good boy";
+            let x=document.getElementById("heading").innerHTML;
+            alert(x);
+        }
+
+
+    </script>
+</head>
+<body>
+    <button onclick="button()">click me</button>
+    <h2 id="heading">some random button</h2>
+</body>
+</html>

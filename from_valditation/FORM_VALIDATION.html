@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <script>
+        function validate(){
+            let username=document.getElementById("user");
+            let password=document.getElementById("ps");
+            if(username.value.trim()==""|| password.value==""){
+                alert("Please enter username and password");
+                return false;
+            }
+            else{
+                return true;
+
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <form onsubmit="return validate();" action="/from_valditation/form_val_next_page.html"> <!--Action is used to perform what action 
+                                                need to be taken-->
+        <input type="text" name="username" id="user" placeholder="username">
+        <br><br>
+        <input type="password" name="password" id="ps" placeholder="password">
+        <br><br>
+        <button id="bt1" type="submit">
+            click me
+        </button>
+    </form>
+</body>
+</html>

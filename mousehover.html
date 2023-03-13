@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <script>
+        /*Mouse hover*/
+        function setNewImage(){
+            document.getElementById("img1").src="/IMAGES/machine.jpg";
+
+        }
+        function oldImage(){
+        document.getElementById("img1").src = "/IMAGES/IMAGE.jpg";
+        }
+
+    </script>
+</head>
+<body>
+    <img id="img1" src="/IMAGES/IMAGE.jpg" onmouseover="setNewImage()" onmouseout="oldImage()" width="300" alt="machine learning">
+</body>
+</html>

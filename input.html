@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input in the page</title>
+    <script type="text/javascript">
+        function f1(){
+            let str=document.getElementById("text1").value;
+            let str1 = document.getElementById("text2").value;
+            if(str===str1){
+                alert("both are same");
+            }
+            else
+            alert("both are differnt");
+
+        }
+    </script>
+</head>
+<body>
+    <input id="text1" placeholder="Username">
+    <br>
+    <br>
+    <input type="password" id="text2" placeholder="password">
+    <br>
+    <br>
+    <h1>Good morning</h1>
+
+    
+    <button onclick="f1()" id="click">
+        click me
+    </button>
+</body>
+</html>
